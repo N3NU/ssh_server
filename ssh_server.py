@@ -21,7 +21,7 @@ class Server (paramiko.ServerInterface):                    #SSH-inize socket li
         return paramiko.OPEN_FAILED_ADMINISTRATIVELY_PROHIBITED
     
     def check_auth_password(self, username, password):
-        if (username == 'tim') and (password == 'sekret'):
+        if (username == 'tim') and (password == 'sekret'):          #use these credentials for access from client host running ssh_rcmd.py
             return paramiko.AUTH_SUCCESSFUL
 
 #####main block
