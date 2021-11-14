@@ -26,7 +26,7 @@ class Server (paramiko.ServerInterface):                    #SSH-inize socket li
 
 #####main block
 if __name__ == '__main__':
-    server = '192.168.1.207'
+    server = '192.168.1.189'
     ssh_port = 2222
     try:
         sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
